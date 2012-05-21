@@ -1,11 +1,13 @@
 require 'resque'
 require 'resque/server'
+require 'resque-history'
 
 # Extends Resque Web Based UI.
 # Structure has been borrowed from ResqueScheduler.
 module ResqueHistory
   module Server
     include Resque::Helpers
+    include Resque::History::Helper
 
     def self.erb_path(filename)
       File.join(File.dirname(__FILE__), 'server', 'views', filename)

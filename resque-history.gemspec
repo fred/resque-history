@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "resque-history"
-  s.version = "1.7.0"
+  s.version = "1.9.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Katzmopolitan"]
-  s.date = "2012-04-17"
+  s.date = "2012-05-09"
   s.description = "Show history of recently executed jobs"
   s.email = "ilyakatz@gmail.com"
   s.extra_rdoc_files = [
@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/resque-history.rb",
+    "lib/resque-history/helpers/helper.rb",
     "lib/resque-history/plugins/history.rb",
     "lib/resque-history/server.rb",
     "lib/resque-history/server/views/history.erb",
@@ -40,6 +41,7 @@ Gem::Specification.new do |s|
     "resque-history.gemspec",
     "spec/redis-test.conf",
     "spec/resque-history/plugins/history_spec.rb",
+    "spec/resque-history/resque_history_helper_spec.rb",
     "spec/resque-web_spec.rb",
     "spec/spec_helper.rb",
     "test/helper.rb",

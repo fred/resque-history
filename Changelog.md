@@ -1,6 +1,18 @@
 Changelog
 =========
 
+## 1.9.0 (May 9, 2012)
+
+Features:
+
+  - Record failed jobs
+
+## 1.8.2 (May 7, 2012)
+
+Features:
+
+  - Record execution time
+
 ## 1.7.0 (April 17, 2012)
 
 Features:
