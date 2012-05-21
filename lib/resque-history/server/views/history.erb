@@ -10,7 +10,7 @@
   </form>
 <% end %>
 
-<p class='intro'>Showing <%=start%> to <%= start + 20 %> of <b><%= size = Resque.redis.llen(Resque::Plugins::History::HISTORY_SET_NAME) %></b> jobs</p>
+<p class='intro'>Showing <%=start%> to <%= start + 50 %> of <b><%= size = Resque.redis.llen(Resque::Plugins::History::HISTORY_SET_NAME) %></b> jobs</p>
 <div id="main">
   <%= partial :next_more, :start => params[:start].to_i, :size => size %>
 
